@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shopping Site for Mobiles,Groceries</title>
+    <link rel="icon" type="image/png" href="logo1.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <style>
+      
+ 
+      .navbar{
+        text-align:left;
+        font-family:inter_regular, fallback-inter_regular, Arial, sans-serif;
+        font-size: 16px;
+        color: black;
+        background-color:white;
+        padding:1px;
+        border: 1px;
+        margin:2px;
+        width: 1500px;
+        height: 100px;
+        justify-content: space-around;
+        
+         }
+         h1{
+          font-family: Arial, Helvetica, sans-serif;
+         }
+        
+
+     
+         .image{
+            display:flex;
+            justify-content: space-around;
+         }
+         .imageA{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+         }
+          .imageC{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+         }
+         .imageD{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+         }
+                  .imageE{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+         }
+             .imageF{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+         }
+         
+         .container{
+           container: 40px; 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; 
+         }
+         .footer {
+      background-color: #172337;
+      color: white;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 180px;
+      margin: 10px;
+    }
+
+    .footer-column h3 {
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .footer-column ul li:hover {
+      color: white;
+      cursor: pointer;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 13px;
+      color: #aaa;
+      border-top: 1px solid #444;
+      margin-top: 20px;
+    }
+    h4{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+   account-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.account-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+  min-width: 200px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.account-menu:hover .dropdown-content {
+  display: block;
+} 
+h4{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+ 
+   input[type="text"]{
+        width: 50%;
+        height: 45%;
+        padding:1px;
+        margin:8px 1;
+        border: 1px solid black;
+        border-radius: 8px;
+        background-color:paleturquoise;
+        color: skyblue;
+        padding-left:30px;
+
+       }  
+       .fa-magnifying-glass{
+         position:relative;
+         left:36px;
+       } 
+    </style>
+</head>
+<body>
+   
+    <!--nav bar-->
+    <div class="navbar">
+       <!-- <i class="fa-solid fa-bars"></i> -->
+       <i class="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"></i>
+      
+         <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg">
+         <i class="fa-solid fa-magnifying-glass" style="color: #121212;"></i>
+         <input type="text" id="search" placeholder="search here" >
+         
+         
+         <div class="dropdown">
+          <!-- <button class="dropbtn"> -->
+       <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg">
+      
+                <select name="Account" id="Account">
+                  <option value="">Account</option>
+                <option value="hindi">my profile</option>
+                <option value="french">super coin zone</option>
+                <option value="italian">Flipkart Plus zone</option>
+                <option value="hindi">Orders</option>
+                <option value="hindi">whishlist(90)</option>
+                <option value="hindi">Coupons</option>
+                <option value="hindi">Gift Cards</option>
+                <option value="hindi">Notifications</option>
+                <option value="hindi">Logout</option>
+              </select>
+          <!-- </button> -->
+          
+</div>
+      <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" <p><strong>Cart</strong></p> 
+       <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" <p><strong>Become a Seller</strong></p>
+       <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg">
+</div>
+</div>
+
+
+
+    
+   <br>
+    
+    <div class="image">
+  <div><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/a22a213ca6221b65.png?q=100" alt="logo" width=50px height=55px border-radius:50px><figcaption>Minutes</figcaption></div><br>
+ <div><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100" alt="logo" width=50px height=55px border-radius:50px><figcaption>Mobiles & Tablets</figcaption></div><br>
+ 
+   <div><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100" alt="logo" width=50px height=55px><figcaption>TVs & Appliances</figcaption></div>
+    <br>
+<div><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100" alt="logo"  width=50px height=55px><figcaption>Flight Bookings</figcaption></div>
+<br>
+ <div><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/aeeada80b1863116.png?q=100" alt="logo" width=50px height=55px><figcaption>Grocery</figcaption></div>
+ <br>
+<div><img src="f1.png" alt="logo" width=50px height=55px><figcaption>Fashion</figcaption></div><br>
+<div><img src="fashion_files/1788f177649e6991.png"><figcaption>Home & Furniture</figcaption></div><br>
+<div><img src="fashion_files/af646c36d74c4be9.png"><figcaption>Electronics</figcaption></div><br>
+</div><br>
+
+
+
+
+
+<div class="detailed-view-card-container">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+</ol>
+<div class="carousel-inner">
+<div class="carousel-item active">
+    <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/f373b9176f5b9955.jpg?q=60" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+    <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/5492533ec9e2aa97.jpeg?q=60" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+    <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/1338bd4fc60390d8.jpg?q=60" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+    <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/5b309e98775e22e4.jpg?q=60" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+    <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/076c4f2ee87225d7.jpg?q=60" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+    <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/6b48199df7d390ab.jpeg?q=60" class="d-block w-100" alt="...">
+</div>
+</div>
+<button><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a></button>
+<button><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span> 
+</a></button>
+
+</div>
+
+<h1>Best of Electronics</h1><br>
+<br><div class="imageA">
+  <!-- <h1>Best of Electronics</h1><br> -->
+<div><img src="https://rukminim2.flixcart.com/image/240/240/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=60"alt="logo" width="120px" height="120px"><figcaption>Best Truewireless H....<br><strong>Grab now</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/xif0q/projector/q/7/6/i9-pro-10-ei9027-led-projector-egate-original-imah5e3bggu5qcgp.jpeg?q=60"alt="logo" width="120px" height="120px"><figcaption>Projector<br><strong>From RS 6999</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/xif0q/projector/u/s/0/zeb-qlp-5-pixaplay-73-13-12-zeb-qlp-5-pixaplay-73-full-hd-original-imahch2exerg3uyf.jpeg?q=60"alt="logo" width="120px" height="120px"><figcaption>BenQ GS2 wireless portable projector<br><strong>From RS 5555</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/kz1lle80/smartwatch/m/f/q/-original-imagb54tb6fpurze.jpeg?q=60" alt="logo" width="120px" height="120px"><figcaption>Noisesmart watches<br><strong>From 1,999</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=60" alt="logo" width="120px" height="120px"><figcaption>Best Selling Mobiles s...<br><strong>From Rs 499</strong> </figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/xif0q/printer/s/8/d/-original-imafkykednshkhx5.jpeg?q=60" alt="logo" width="120px" height="120px"><figcaption>Printers<br><strong>From RS2336</strong></figcaption></div>
+<!-- <div><img src="https://rukminim2.flixcart.com/fk-p-flap/1060/1620/image/ce3cf81edb760559.jpg?q=60" alt="logo" width="300px" height="350px"></div> -->
+</div>
+<h1>Beauty,Food,Toys&more</h1>
+<div class="imageC">
+   <div><img src="https://rukminim2.flixcart.com/image/240/240/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Top Selling Stationery<br><strong>From RS49</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/k6fd47k0/nut-dry-fruit/p/z/7/200-100-natural-california-pouch-happilo-original-imafzvw2tcazeur6.jpeg?q=60" alt="logo"
+width="140px" height="140px"><figcaption>Dry Fruits<br><strong>Upto 75% Off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=60"alt="logo"
+width="140px" height="140px"><figcaption>Geared Cycles<br><strong>upto 70% Off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/jxz0brk0/stuffed-toy/n/t/s/4-feet-pink-very-beautiful-best-quality-for-special-gift-125-13-original-imafgv92puzkdytg.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Soft Toys<br><strong>upto 70% Off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>remote Control Toys<br><strong>upto 75% Off</strong></figcaption></div> 
+<div><img src="https://rukminim2.flixcart.com/image/240/240/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>coffee Powder<br><strong>upto 80% Off</strong></figcaption></div> 
+<div><img src="https://rukminim2.flixcart.com/image/240/240/kl5hh8w0/puzzle/g/n/g/60-wooden-earth-jigsaw-puzzle-60-pcs-webby-original-imagyc8hsdztzdzb.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>puzzles & Cubes<br><strong>From 79</strong></figcaption></div>
+</div><br><br>
+<h1>Sports,Healthcare & more</h1>
+<br>
+<div class="imageD">
+<div><img src="https://rukminim2.flixcart.com/image/240/240/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Best of Action Toys<br><strong>upto 70% Off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/kkimfm80/tea/z/n/1/premium-pouch-regular-tea-powder-tata-original-imafzuf2mnubzphd.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Tea Powder<br><strong>upto 75% Off</strong></figcaption></div> 
+<div><img src="https://rukminim2.flixcart.com/image/240/240/kiqbma80-0/musical-toy/s/k/b/xylophone-guitar-wooden-kids-first-musical-sound-instrument-toy-original-imafyfszcjkjcwwz.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Musical Toys<br><strong>under 199</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/ks6ef0w0/cereal-flake/q/w/h/1-oats-veggies-masala-oats-pouch-yogabar-original-imag5suhzvwy3xh4.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Breakfast Cereal<br><strong>upto 75% Off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/krgohow0/learning-toy/1/a/h/mapology-ultimate-indian-combo-india-with-capitals-map-puzzle-original-imag59f2vyh63v9x.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Learning & Education...<br><strong>upto 80% Off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/240/240/kcjexe80/honey/w/y/4/1-honey-saffola-original-imaftn9ppz2shxzg.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Honey<br><strong>upto 65% Off</strong></figcaption></div>
+</div><br><br>
+<h1>Discount for you</h1><br>
+<div class="container"></div>
+  <div class="imageE">
+  <div><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/ethnic-set/b/7/m/xl-ps-peach-2025-pschoice-original-imahavzewhkyyuzk.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Best Discounts<br><strong>Min.50% Off </strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/dress/w/7/v/l-sgn-blck-ethniclook-original-imahec76th9gb4zk.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Top Quality<br><strong>upto 90% Off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/egg-cooker/6/w/p/7-nec-1530-nova-original-imahf2cvfpfdbpzv.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Egg Cookers<br><strong>Min.50% Off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/trouser/h/p/p/s-plazo-23-griopy-original-imahcf5darbhhym4.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Women’s Trousers<br><strong>Grab Or Gone</strong></figcaption></div>
+</div>
+  <br><h1>You May Know</h1>
+<div class="imageF">
+<div><img src="https://rukminim2.flixcart.com/image/680/680/xif0q/kurta/l/f/w/xxl-women-kurta-auriprx-fashion-original-imah5r5cvch8zn47.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Women's Ethnic Sets<br><strong>Min.50% Off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/680/680/xif0q/top/y/s/i/m-1-km-top301-karma-outfit-original-imahd2mrabucyyfq.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Krama OUTFIT beach wear..<br><strong>RS 445  44% off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/680/680/xif0q/kurta/0/f/f/3xl-rj-261-rajools-original-imah9gnwarpybz29.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>women Dress<br><strong>50-80% Off</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/salwar-kurta-dupatta/d/o/m/xxl-kurta-pant-with-dupatta-aditi-tex-fab-original-imah78pxsmzdwhyh.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>women’s Ethnic set<br><strong>Hand-picked</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/ethnic-set/k/u/2/xxl-tie-dye-001-fabunna-cotton-original-imagzwfb5v6mjupy.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Affordable Options<br><strong>under RS 499</strong></figcaption></div>
+<div><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/ethnic-set/4/s/k/s-blue-kurta-dd-s-creation-original-imah2eg58ahuycab.jpeg?q=60" alt="logo" width="140px"
+height="140px"><figcaption>Top rated<br><strong>under RS300</strong> </figcaption></div>
+</div> <br><br>
+<h4>Top Stories:Brand directory</h4>
+<p><strong>MOST SEARCHED FOR ON FLIPKART:</strong> In searches for top-selling electronics and fashion items, with smartphones—particularly iPhone models like the iPhone 13, 14, and 12—leading the list. Consumers are also frequently looking for budget and mid-range mobile phones from brands like Samsung, Realme, and Poco. Alongside mobiles, categories such as laptops, smartwatches, and Bluetooth headphones remain highly popular, reflecting the strong demand for personal tech. In fashion, men's sneakers, especially from brands like Nike and Puma, as well as sarees and night suits, have been among the most searched. Household essentials like refrigerators, washing machines, and kitchen appliances also see consistent interest, especially during seasonal sales. These trends highlight the diverse preferences of Flipkart users, spanning both daily-use necessities and high-end gadgets.
+</p>
+<P><strong>MOBILES:</strong> continue to dominate as the most searched category on Flipkart, with users showing strong interest in both premium and budget smartphones. Among the top-searched models are the iPhone 13, iPhone 14, and iPhone 12, reflecting the popularity of Apple devices despite their higher price range. At the same time, brands like Samsung, Realme, Redmi, and POCO are widely searched for their affordable and feature-rich models, such as the Samsung Galaxy M14, Redmi Note series, and Realme Narzo variants. Consumers are also frequently looking for specific features like 5G support, long battery life, fast charging, and high-refresh-rate displays. Searches often spike during Flipkart’s seasonal sales, like the Big Billion Days, when users hunt for mobile deals, exchange offers, and no-cost EMI options. Overall, mobile phones remain the backbone of Flipkart’s electronics segment, driven by a mix of aspirational and value-driven shopping behavior.
+</P>
+<P><strong>CAMERA:</strong> Nikon, and Sony, with popular searches including the Canon EOS 1500D, Nikon D3500, and Sony Alpha series. In addition to professional cameras, there’s a rising interest in action cameras such as the GoPro Hero models, as well as compact digital cameras for travel and casual use. Buyers often search with specific needs in mind—like 4K video recording, Wi-Fi connectivity, optical zoom, and low-light performance. During major Flipkart sale events, camera accessories like tripods, lenses, memory cards, and camera bags also see a spike in searches. Whether for professional work or hobby photography, Flipkart remains a go-to destination for users seeking quality cameras and competitive pricing.
+</P>
+<P><strong>FURNITURE:</strong>Popular searches include essentials like sofas, beds, dining tables, and wardrobes, with many users specifically looking for compact or space-saving designs suited for modern apartments. Flipkart’s wide selection of engineered wood, solid wood, and metal-frame furniture attracts both budget-conscious and premium buyers. Items like study tables, office chairs, and bookshelves have also seen a rise in interest, especially with the continued trend of work-from-home setups. During festive seasons and sale events, searches for modular furniture and home décor items increase significantly as users look for deals on both functionality and aesthetics. With detailed product filters, installation services, and customer reviews, Flipkart has become a preferred destination for furniture shopping online.</P>
+<P><strong>GROCERIES:</strong>rice, atta (wheat flour), pulses, cooking oils, and snacks, along with branded packaged goods such as Tata Salt, Fortune Oil, and Aashirvaad Atta. The platform also sees high search volumes for personal care items, cleaning supplies, beverages, and dairy products. Convenience plays a big role, as users prefer the ease of ordering groceries online with scheduled delivery, bulk discounts, and value packs. Searches tend to peak at the beginning of the month and during promotional events like “Supermart Savings Day,” when Flipkart offers heavy discounts and combo deals. With an expanding assortment and increasing customer trust, groceries are becoming a key pillar of Flipkart’s e-commerce ecosystem.
+</P>
+<p><strong>FOOTWEAR:</strong>Alongside performance shoes, sandals and slippers have emerged as some of the most searched items—particularly slippers, which have surpassed heels in popularity within both men’s and women’s categories 
+
+. On the brand side, Puma, Nike, Adidas, Campus, and Skechers frequently lead in page views, often ranking among the top five viewed footwear brands on Flipkart over recent months 
+
+.</p>
+<P><strong>Flipkart: The One-Stop Shopping Destination</strong><br>Flipkart has firmly established itself as India’s premier one-stop shopping destination, catering to the diverse needs of millions of customers across the country. Whether it's the latest smartphones, trendy fashion, reliable home appliances, or daily essentials, Flipkart offers an extensive range of products under one digital roof. With frequent sales, competitive pricing, and trusted delivery services, the platform ensures a seamless shopping experience from browsing to checkout. Features like user reviews, easy returns, and personalized recommendations further enhance customer satisfaction. From rural towns to metro cities, Flipkart continues to bridge the gap between convenience and variety, redefining how India shops online.
+
+</P>
+<P><strong>Flipkart plus</strong><br>Flipkart Plus is the platform’s premium loyalty program designed to reward its most dedicated shoppers. Offering a range of exclusive benefits, Flipkart Plus members enjoy free and faster delivery, early access to major sales, and priority customer support. The program is completely free to join—customers simply earn “Plus Coins” with every eligible purchase, which can later be redeemed for exciting rewards, partner offers, and vouchers. With seamless integration across categories like electronics, fashion, groceries, and travel services (via Flipkart’s partners), Flipkart Plus delivers added value and a more personalized, hassle-free shopping experience.</P>
+
+
+
+<p><strong>no cost EMI</strong><br> high-value products and pay in easy monthly installments—without any additional interest or hidden charges. Whether it's a smartphone, laptop, home appliance, or furniture item, this payment method ensures affordability without compromising on quality. The amount is split into equal EMIs, and customers pay only the product price, not a rupee more. Available through select credit/debit cards and financing partners like Bajaj Finserv, it’s a smart way to manage expenses while enjoying instant ownership. With No Cost EMI, Flipkart empowers customers to buy big, stress-free.</p>
+<p><strong>EMI on Debit Cards</strong><br> EMI on Debit Cards feature offers customers the convenience of buying expensive items without the need for a credit card. This facility allows eligible debit card holders—typically from banks like HDFC, SBI, Axis Bank, ICICI, and Kotak Mahindra—to convert purchases into affordable monthly installments. It’s especially helpful for customers who prefer not to use or don’t own a credit card. The process is seamless: during checkout, eligible users can see the EMI option automatically and select a suitable tenure (usually 3, 6, or 9 months). With minimal documentation and zero or low interest in many cases, EMI on debit cards makes premium products more accessible to a wider audience.
+
+</p>
+<p><strong>Mobile Exchange offers: </strong><br>At delivery, a field agent will inspect the old phone using diagnostic tools—checking for physical damage, display quality, and overall functionality. If everything checks out, the exchange value will be deducted from your final payment. For example, the iPhone 13 currently gets up to ₹27,000 off when exchanged for an iPhone 15, while a Samsung Galaxy S20 may fetch around ₹10,000–₹12,000 depending on condition. Mid-range phones like the Realme Narzo 50A or Redmi Note 10 typically offer ₹2,000–₹5,000 in exchange value. However, actual value may differ at the time of delivery based on wear, screen scratches, or hardware issues. To maximize your benefit, ensure your phone is in good condition, factory reset, and fully charged at pickup. Flipkart often pairs exchange bonuses with card discounts, making high-end phones more affordable—especially during Big Billion Days or festive sales.
+
+</p>
+<p><strong></strong></p>
+<footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>ABOUT</h3>
+        <ul>
+          <li>Contact Us</li>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Flipkart Stories</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>HELP</h3>
+        <ul>
+          <li>Payments</li>
+          <li>Shipping</li>
+          <li>Cancellation & Returns</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>POLICY</h3>
+        <ul>
+          <li>Return Policy</li>
+          <li>Terms Of Use</li>
+          <li>Security</li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>SOCIAL</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Mail Us:</h3>
+        <ul>
+          <li>Flipkart Internet Private Limited,</li>
+          <li>Buildings Alyssa, Begonia &</li>
+          <li>Clove Embassy Tech Village,</li>
+          <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+          <li>Bengaluru, 560103, India</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Flipkart Clone | Designed for Practice
+    </div>
+  </footer>  
+</body>
+</html>
